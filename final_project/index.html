@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/add_list.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <svg viewBox="0 0 480 150">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%">Todo</text>
+          </symbol>
+
+          <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
+      <div class="row justify-center">
+        <div class="col-12">
+          <nav class="navbar">
+            <ul class="navbar-menu">
+              <li class="navbar-item" onclick="openPopup()">
+                <a href="#new">New</a>
+              </li>
+              <li class="navbar-item" onclick='filter("all")'>
+                <a href="#all">All</a>
+              </li>
+              <li class="navbar-item" onclick='filter("pending")'>
+                <a href="#pending">Pending</a>
+              </li>
+              <li class="navbar-item" onclick='filter("completed")'>
+                <a href="#completed">Completed</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-center">
+        <div class="grid-container" id="list_container">
+          <!-- RIP GRID-ITEMS -->
+        </div>
+      </div>
+    </div>
+    <!-- Overlay for the modal -->
+    <div id="popup-overlay" class="popup-overlay" onclick="closePopup(event)">
+      <div class="popup-container">
+        <h2>Add a New Task</h2>
+        <form class="todo-form" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Enter task title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Enter task description"
+              required
+            ></textarea>
+          </div>          
+          <div class="form-buttons">
+            <button id="submit_btn" type="submit" class="btn add-btn">
+              Add
+            </button>
+            <button type="button" class="btn cancel-btn" onclick="cancelForm()">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-center">
+        <div id="no-items-message" class="no-items">No items found</div>
+        <div class="grid-container" id="list_container"></div>
+      </div>
+    </div>
+    
+    <script src="js/js.js"></script>
+  </body>
+</html>

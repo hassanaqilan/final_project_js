@@ -1,0 +1,416 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  
+  .col {
+    flex: 1;
+    min-height: 1px;
+  }
+
+  /* Justify content: start (default) */
+.justify-start {
+    justify-content: flex-start;
+  }
+  
+  /* Justify content: center */
+  .justify-center {
+    justify-content: center;
+  }
+  
+  /* Justify content: end */
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  /* Justify content: space between */
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  /* Justify content: space around */
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  /* Justify content: space evenly */
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+/* Align items: start (default) */
+.align-start {
+    align-items: flex-start;
+  }
+  
+  /* Align items: center */
+  .align-center {
+    align-items: center;
+  }
+  
+  /* Align items: end */
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  /* Align items: stretch (default) */
+  .align-stretch {
+    align-items: stretch;
+  }
+  
+  /* Align items: baseline */
+  .align-baseline {
+    align-items: baseline;
+  }
+/* Justify items: start */
+.justify-items-start {
+    justify-items: start;
+  }
+  
+  /* Justify items: center */
+  .justify-items-center {
+    justify-items: center;
+  }
+  
+  /* Justify items: end */
+  .justify-items-end {
+    justify-items: end;
+  }
+  
+  /* Justify items: stretch (default) */
+  .justify-items-stretch {
+    justify-items: stretch;
+  }
+/* Align content: start */
+.align-content-start {
+    align-content: flex-start;
+  }
+  
+  /* Align content: center */
+  .align-content-center {
+    align-content: center;
+  }
+  
+  /* Align content: end */
+  .align-content-end {
+    align-content: flex-end;
+  }
+  
+  /* Align content: space between */
+  .align-content-between {
+    align-content: space-between;
+  }
+  
+  /* Align content: space around */
+  .align-content-around {
+    align-content: space-around;
+  }
+  
+  /* Align content: stretch (default) */
+  .align-content-stretch {
+    align-content: stretch;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  svg {
+    display: block;
+    font: 3.5em 'Montserrat';
+    width: 480px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+.navbar {
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-item a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+.mt-5{
+  margin-top: 10rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: #faf5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+}
+
+/* Checkbox styling */
+.checkbox {
+  margin-right: 15px;
+  transform: scale(1.2); /* Make the checkbox slightly bigger */
+}
+
+/* Title styling */
+.title {
+  flex-grow: 1; /* Take up the remaining space */
+  font-size: 18px;
+  color: #333;
+}
+
+/* Actions styling */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+/* Title styling */
+.title {
+  flex-grow: 1; /* Take up the remaining space */
+  font-size: 18px;
+  color: #333;
+}
+
+/* Actions styling */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Action button styling */
+.action-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.popup-overlay {
+  position: fixed; /* Cover the full screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.91); /* Darker overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Make sure it appears on top */
+}
+
+
+.popup-container {
+  width: 70%; /* Increase width */
+  max-width: 2000px; /* Set a max width */
+  background: white;
+  padding: 30px; /* More padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+/* Styling for form buttons */
+.popup-container .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Button styles (can be customized) */
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+/* Responsive design: On smaller screens (below 768px), stack the grid items */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+
+/* Mobile responsive: Stack items vertically */
+@media (max-width: 768px) {
+  .navbar-menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-item {
+      margin: 10px 0;
+  }
+}
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+  @media (min-width: 576px) {
+    .col-sm {
+      flex: 1;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .col-md {
+      flex: 1;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg {
+      flex: 1;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col-xl {
+      flex: 1;
+    }
+  }
+    
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  
